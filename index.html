@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaggy — It Wasn't Me | Story Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scroll-track"><span id="scrollProgress"></span></div>
+
+  <header class="topbar">
+    <a class="logo" href="#top">🎧 It Wasn't Me</a>
+    <nav>
+      <a class="pill" href="#storyline">Сюжет</a>
+      <a class="pill" href="#timeline">Лирика</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero card">
+      <p class="eyebrow">SHAGGY & RIKROK • STORY MODE</p>
+      <h1>Скролль — и ты проходишь весь сюжет <span>“It Wasn't Me”</span></h1>
+      <p class="sub">Максимально современный UI: неон, стекло, липкий прогресс, поэтапное раскрытие текста и ощущение клипа, который разворачивается прямо по мере скролла.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#timeline">Начать историю</a>
+        <button id="vibeBtn" class="btn">⚡ Включить vibe-режим</button>
+      </div>
+    </section>
+
+    <section id="storyline" class="section card">
+      <h2>Как построен storytelling</h2>
+      <div class="feature-grid">
+        <article>
+          <h3>01. Интро-диалог</h3>
+          <p>Начинается как сцена из фильма: паника, вопросы, и мемная развязка — “Say it wasn't you”.</p>
+        </article>
+        <article>
+          <h3>02. Улики и давление</h3>
+          <p>Припевы и pre-chorus наращивают напряжение: фактов всё больше, отговорки всё слабее.</p>
+        </article>
+        <article>
+          <h3>03. Развязка</h3>
+          <p>В бридже появляется мораль: стратегия “игрока” рушится, остаётся признать потерю контроля.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="timeline" class="timeline-layout">
+      <aside class="sticky-panel card">
+        <p class="tiny">Сейчас в треке</p>
+        <h3 id="stageTitle">Intro</h3>
+        <p id="stageDesc" class="stage-desc">Yo, man... my girl just caught me.</p>
+        <div class="mini-progress"><span id="sectionProgress"></span></div>
+        <p class="tiny" id="stageCount">1 / 9</p>
+      </aside>
+
+      <div class="timeline-list">
+        <article class="scene card active" data-title="Intro" data-desc="Паника, признание и совет 'Say it wasn't you'.">
+          <p class="label">Intro</p>
+          <blockquote>
+            Yo, man... My girl just caught me / With who? The girl next door...<br>
+            Man I don't know what to do / <strong>Say it wasn't you</strong>.
+          </blockquote>
+        </article>
+
+        <article class="scene card" data-title="Chorus I" data-desc="Главный рефрен: пойман с поличным, но отрицание продолжается.">
+          <p class="label">Chorus</p>
+          <blockquote>
+            Honey came in and she caught me red-handed, creepin' with the girl next door...<br>
+            Picture this, we were both butt naked, bangin' on the bathroom floor.
+          </blockquote>
+        </article>
+
+        <article class="scene card" data-title="Verse I" data-desc="Shaggy даёт абсурдные 'советы' как выкручиваться.">
+          <p class="label">Verse 1</p>
+          <blockquote>
+            You better watch your back before she turn into a killa...<br>
+            Never admit to a word weh she say, and if she claim a yuh, tell her “Baby, no way!”.
+          </blockquote>
+        </article>
+
+        <article class="scene card" data-title="Pre-Chorus I" data-desc="Список улик становится длиннее — counter, sofa, shower, camera.">
+          <p class="label">Pre-Chorus</p>
+          <blockquote>
+            But she caught me on the counter (It wasn't me), saw me bangin' on the sofa (It wasn't me)...<br>
+            She even caught me on camera (It wasn't me).
+          </blockquote>
+        </article>
+
+        <article class="scene card" data-title="Chorus II" data-desc="Повтор рефрена поднимает драму: why should she believe me?">
+          <p class="label">Chorus</p>
+          <blockquote>
+            I had tried to keep her from what she was about to see...<br>
+            Why should she believe me when I told her it wasn't me?
+          </blockquote>
+        </article>
+
+        <article class="scene card" data-title="Verse II" data-desc="Ещё одна волна рационализаций, всё более хаотичная.">
+          <p class="label">Verse 2</p>
+          <blockquote>
+            Seein' is believin', so you better change your specs...<br>
+            But if she pack a gun, you know you betta run fast.
+          </blockquote>
+        </article>
+
+        <article class="scene card" data-title="Pre-Chorus II" data-desc="Камера снова всё фиксирует: 'Uh, it wasn't me'.">
+          <p class="label">Pre-Chorus</p>
+          <blockquote>
+            She even caught me on camera (Uh, it wasn't me)...<br>
+            Heard the screams gettin' louder, she stayed until it was over.
+          </blockquote>
+        </article>
+
+        <article class="scene card" data-title="Bridge" data-desc="Поворот: из бравады в сожаление и признание потерь.">
+          <p class="label">Bridge</p>
+          <blockquote>
+            Gonna tell her that I'm sorry for the pain that I've caused...<br>
+            You may think that you're a player, but you're completely lost.
+          </blockquote>
+        </article>
+
+        <article class="scene card" data-title="Final Chorus" data-desc="Финальное повторение закрепляет мем и драму трека.">
+          <p class="label">Final Chorus</p>
+          <blockquote>
+            Honey came in and she caught me red-handed...<br>
+            All this time she was standin' there, she never took her eyes off me.
+          </blockquote>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Fan-made interactive landing concept inspired by Shaggy — “It Wasn't Me”.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
